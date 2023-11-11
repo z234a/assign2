@@ -1,0 +1,129 @@
+@{
+    ViewBag.Title = "Historical origin";
+    Layout = "~/Views/Shared/_LayoutPage2.cshtml";
+}
+<body>
+    <header>
+        <img src="~/Content/images/beixuan.jpg" height="400" width=100% alt="Oiled paper umbrella " />
+    </header>
+    <nav class="horizontal">
+        <ul>
+            <li><a href="~/Home/Index">Home</a></li>
+            <li><a class="two" href="~/Home/Historical">Historical origin</a></li>
+            <li><a href="~/Home/Core">Core process</a></li>
+            <li><a href="About.html">About</a></li>
+            <li>@Html.ActionLink("Topics", "Index", "Topics")</li>
+            <li>@Html.ActionLink("Products", "Index", "Products")</li>
+        </ul>
+    </nav>
+    <div id="breadcrumb">
+        <p><strong>YOUR LOCATION : </strong><a href='~/Home/Index'>HOME</a> ><a href='~/Home/Historical'>HISTORICAL ORIGIN</a></p>
+
+    </div>
+    <div>
+        <form target="#" id="search_from">
+            <input class="search_in" type="search" placeholder="Please enter keyword" />
+        </form>
+    </div>
+
+    <img src="~/Content/images/header1.jpg" height="450" width=50% alt="Water separation oil paper umbrella" />
+    <div id="main">
+        <h1>Oil paper umbrella</h1>
+        <p>
+            Fenshui Oil Paper Umbrella is a Han Chinese folk handicraft from Luzhou, Sichuan.
+            Located in Fenshuiling Town, Jiangyang District, Luzhou City, 35 kilometers away from the urban area of Luzhou City.
+        </p>
+        <p>
+            Located on the south bank of the Yangtze River, the transition zone from Sichuan Basin to the Yunnan-Guizhou Plateau,
+            and the junction of Yunnan, Guizhou, Sichuan and Chongqing, it is the Ancient Tea Horse Road and one of the starting points of the South Silk Road;
+            Located in Hejiang Fobao, Chishui, Guizhou, and the golden triangle gateway of Chongqing Simian Mountain tourism.
+        </p>
+
+        <p>
+            The production history of oil paper umbrellas at Fenshui Oil Paper Umbrella Factory is long and difficult to verify,
+            but at least in the Ming and Qing dynasties,
+            oil paper umbrellas were widely produced and used.
+        </p>
+    </div>
+    <div id="main-part-1">
+        <h1>Historical process</h1>
+    </div>
+    <div id="main-part">
+        <ul>
+            <li>
+                <h2>Spring and Autumn Period</h2>
+                <p>
+                    Lu Ban, the grandfather of woodworking, often worked in the field and suffered from the rain
+                    Sister-in-law (Yun Shi) wanted to make something that could protect her from the rain, so she cut the bamboo into thin pieces
+                    The strip, covered with animal skin on the thin strip, looks like a "pavilion", closed like a stick, opened like a cover, this is the earliest umbrella.
+                </p>
+            </li>
+            <li>
+                <h2>Eastern Han Dynasty</h2>
+                <p>
+                    After CAI Lun invented paper, paper umbrella appeared,
+                    and coated the surface of the umbrella with waterproof tung oil to enhance its toughness,
+                    this is the oil-paper umbrella; Many literati and scholars would inscribe their family names or
+                    calligraphy and paintings to express their feelings before oiling them.
+                </p>
+            </li>
+
+            <li>
+                <h2>Song Dynasty</h2>
+                <p>
+                    Shen Kuo's "Mengxi Pen Talk" also mentioned: "With the new red oil umbrella, the day is repeated."(“‘–¬≥‡”Õ…°£¨»’÷–∏≤÷Æ)
+                    Oiled paper umbrellas can also be seen in some literary works such as The Legend of the White Snake.
+                </p>
+            </li>
+
+            <li>
+                <h2>Ming Dynasty</h2>
+                <p>Song Yingxing "Tiangong Open matter" mentioned: "Where the umbrella and oil fan, all use small paper.(∑≤∫˝”Í…°”Î”Õ…»£¨Ω‘”√–°∆§÷Ω)"</p>
+
+            </li>
+            <li>
+                <h2>Modern</h2>
+
+                <p>
+                    In the first part of the artistic performance of the opening ceremony of the Asian Games in Hangzhou,
+                    the 160 "National style youth" on the stage held a hand of about five or six pounds of oil-paper umbrella.
+                    Dancing to the ground for painting, walking ink, simple array changes,
+                    body movements, echoing the unique beauty of the Chinese landscape painting.
+                </p>
+
+            </li>
+        </ul>
+    </div>
+    <footer>
+
+        <div class="text-with-background">
+            <div class="wt dff">
+                <div class="wt_t2 clearfix">
+                    <div class="dda">
+                        <li><a href="~/Home/Index">Oiled paper umbrella products</a> </li>
+                        <li><a href="~/Home/Historical">Historical origin </a> </li>
+                        <li><a href="~/Home/Core"> Core technology</a> </li>
+                    </div>
+
+
+
+                    <div class="ddc">
+                        <li><a href="About.html/">About</a> </li>
+                        <li><a href="Contact.html">Contavt</a> </li>
+                        <li>@Html.ActionLink("Products", "Index", "Products")</li>
+
+                    </div>
+                    <a href="mailto:sgreer@example.com/harpe">Contect : sgreer@example.com/harpe</a>
+                </div>
+            </div>
+        </div>
+        <form id="myForm">
+            <input type="text" placeholder="Hope to get your advice" name="username">
+            <input type="submit" value="Submit">
+        </form>
+
+
+        
+        <div id="clock"></div>
+    </footer>
+</body>

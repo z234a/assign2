@@ -1,0 +1,178 @@
+@{
+    ViewBag.Title = "Core process";
+    Layout = "~/Views/Shared/_LayoutPage3.cshtml";
+}
+<body>
+    <header>
+        <img src="~/Content/images/beixuan.jpg" height="400" width=100% alt="Oiled paper umbrella " />
+    </header>
+    <nav class="horizontal">
+        <ul>
+            <li><a href="~/Home/Index">Home</a></li>
+            <li><a href="~/Home/Historical">Historical origin</a></li>
+            <li><a class="three" href="~Home/Core">Core process</a></li>
+            <li><a href="About.html">About</a></li>
+            <li>@Html.ActionLink("Topics", "Index", "Topics")</li>
+            <li>@Html.ActionLink("Products", "Index", "Products")</li>
+        </ul>
+    </nav>
+    <div id="breadcrumb">
+        <p><strong>YOUR LOCATION : </strong><a href='~/Home/Index'>HOME</a>><a href='~/Home/Core'>CORE PROCESS</a></p>
+    </div>
+
+    <div>
+        <form target="#" id="search_from">
+            <input class="search_in" type="search" placeholder="Please enter keyword" />
+        </form>
+    </div>
+    <!-- <div id="targetLocation">目标位置</div> -->
+
+    <div class="wt lc" style="margin-top:50px">
+        <div class="wt_t clearfix">
+
+            <ul class="lc_ll">
+                <li class="clearfix">
+                    <h2><a href="#targetLocation">01</a></h2>
+                    <span>Select materials</span>
+                </li>
+                <li class="clearfix">
+                    <h2><a href="#targetLocation">02</a></h2>
+                    <span>Make the frame</span>
+                </li>
+                <li class="clearfix">
+                    <h2><a href="#targetLocation">03</a></h2>
+                    <span>Canopy making</span>
+                </li>
+                <li class="clearfix">
+                    <h2><a href="#targetLocation1">04</a></h2>
+                    <span>Decoration</span>
+                </li>
+                <li class="clearfix">
+                    <h2><a href="#targetLocation1">05</a></h2>
+                    <span>Tung oil</span>
+                </li>
+                <li class="clearfix">
+                    <h2><a href="#targetLocation1">06</a></h2>
+                    <span>Dry and check</span>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+    </div>
+    <div id="main-part"><h1>Production Process</h1></div>
+
+    <!-- <a href="#targetLocation">点击这里跳转到目标位置</a> -->
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <dic id="targetLocation">
+                <img src="~/Content/images/buzhou1.jpg" alt="Image 1">
+                <div class="text">
+                    <p>
+                        1. Material selection: The production of oil paper umbrella first needs to select high-quality raw materials, such as bamboo, tung oil, cotton thread, paper and so on. Bamboo should be used to grow more than three years of bamboo, tung oil is used to press the tung tree fruit tung oil, paper should be selected high-quality rice paper or paper.
+                    </p>
+                </div>
+            </dic>
+
+        </div>
+        <div class="grid-item">
+            <div id="targetLocation">
+                <img src="~/Content/images/buzhou3.jpg" alt="Image 2">
+                <div class="text">
+                    <p>
+                        2. Make the skeleton: cut the bamboo into thin strips, and then follow a certain distance and
+                        The shapes are arranged, forming a skeleton. The skeleton needs to be nailed to secure it
+                        Solid and durable.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid-item">
+            <div id="targetLocation">
+                <img src="~/Content/images/buzhou2.jpg" alt="Image 3">
+                <div class="text">
+                    <p>3. Make umbrella surface: Soak rice paper or paper in water to make it soft. The paper is then attached to the skeleton and secured with string or glue. Leave some space between the papers so that the rain can slide off the umbrella.</p>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid-item">
+            <div id="targetLocation1">
+                <img src="~/Content/images/buzhou4.jpg" alt="Image 4">
+                <div class="text">
+                    <p>
+                        4. Decorate the umbrella surface: Draw or paste various patterns and decorations on the umbrella surface, such as flowers, animals, landscapes and so on. These patterns and decorations add more than just oil paper
+                        The beauty of the umbrella also has a certain cultural connotation.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid-item">
+            <div id="targetLocation1">
+                <img src="~/Content/images/buzhou5.jpg" alt="Image 5">
+                <div class="text">
+                    <p>
+                        5. Apply tung oil: Apply tung oil on the umbrella surface to make the umbrella surface waterproof. The application process should be uniform to ensure the quality of the umbrella surface.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid-item">
+            <div id="targetLocation1">
+                <img src="~/Content/images/buzhou6.jpg" alt="Image 6">
+                <div class="text">
+                    <p>
+                        6. Completion of production: After the above steps, the production process of oiled paper umbrella is basically completed. At this time,
+                        the oiled paper umbrella can be dried and checked to ensure that the umbrella surface is dry and the skeleton is firm.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div data-tab="1"></div> -->
+
+    <footer>
+
+        <div class="text-with-background">
+            <div class="wt dff">
+                <div class="wt_t2 clearfix">
+                    <div class="dda">
+                        <li><a href="~/Home/Index">Oiled paper umbrella products</a> </li>
+                        <li><a href="~/Home/Historical">Historical origin </a> </li>
+                        <li><a href="~/Home/Core"> Core technology</a> </li>
+                    </div>
+
+
+
+                    <div class="ddc">
+                        <li><a href="About.html/">About</a> </li>
+                        <li><a href="Contact.html">Contavt</a> </li>
+                        <li>@Html.ActionLink("Products", "Index", "Products")</li>
+
+                    </div>
+                    <a href="mailto:sgreer@example.com/harpe">Contect : sgreer@example.com/harpe</a>
+                </div>
+            </div>
+        </div>
+        <form id="myForm">
+            <input type="text" placeholder="Hope to get your advice" name="username">
+            <input type="submit" value="Submit">
+        </form>
+
+
+        
+        <div id="clock"></div>
+    </footer>
+
+
+</body>

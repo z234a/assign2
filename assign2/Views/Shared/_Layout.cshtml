@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "Topices And Products";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title </title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        nav {
+            text-align: center;
+            background-color: #555454;
+            margin-top: -10px;
+        }
+
+            nav ul {
+                display: inline-block;
+                padding-right: 30px;
+                list-style-type: none;
+                overflow: hidden;
+                text-align: center;
+            }
+
+                nav ul li {
+                    float: left;
+                    list-style: none;
+                    margin: 0 10px;
+                }
+
+        .horizontal li a {
+            text-transform: uppercase;
+            font-size: 185%;
+            color: white;
+        }
+
+        .list {
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        .horizontal li {
+            /*display与float两种方式使列表转为横向*/
+            display: inline;
+        }
+
+            .horizontal li a:hover {
+                background-color: #303030;
+                color: #999999;
+            }
+
+        .horizontal.active {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center
+        }
+
+        .youzhisan {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="horizontal">
+        <ul>
+            <li><a class="first" href="~/Home/Index">Home</a></li>
+            <li><a href="~/Home/Historical">Historical origin</a></li>
+            <li><a href="~/Home/Core">Core process</a></li>
+            <li><a href="About.html">About</a></li>
+            <li>@Html.ActionLink("Topics", "Index", "Topics")</li>
+            <li>@Html.ActionLink("Products", "Index", "Products")</li>
+        </ul>
+        @using (Html.BeginForm("Index", "Products", FormMethod.Get, new
+        {
+            @class =
+"navbar-form navbar-left"
+        }))
+        {
+            <button type="submit" class="youzhisan">Submit</button>
+            <div class="form-group">
+                @Html.TextBox("Search", null, new
+                {
+                    @class = "youzhisan",
+                    @placeholder =
+                "Search Products"
+                })
+            </div>
+
+        }
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+    <footer>
+        <a href="mailto:sgreer@example.com/harpe">Contect : sgreer@example.com/harpe</a>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

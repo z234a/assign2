@@ -1,0 +1,243 @@
+
+/* 整体介绍模块 */
+
+ /* 导航格式 */
+ body{
+    min-width: 1000px;
+   max-width: 2000px;
+   width: 98%;
+   position: relative;
+   background-color: rgb(254, 252, 252);
+ }
+ 
+
+ @font-face {
+    font-family:"cac_champagne";
+    src: url("/cac_champagne.ttf");
+ }
+ /**/
+ #leftcol>:first-child{
+    font-family: "cac_champagne";
+    font-weight: normal;
+ }
+ /*右边标题变花字*/
+ .lc_ll li h2{
+    font-family: "cac_champagne";
+    font-weight: normal;
+ }
+ nav {
+    text-align: center;
+    background-color: #555454;
+    margin-top: -10px;
+        }
+nav ul {          
+    display: inline-block;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    padding-right: 30px;
+ }
+ nav ul li {
+            float: left;
+            list-style: none;
+            margin: 0 10px;
+        }
+
+.horizontal li  a{ 
+   text-transform: uppercase;
+   font-size: 185%;
+   color: white;
+   
+}
+.three{
+    background-color: rgb(13, 14, 14);
+}
+
+#breadcrumb a{
+    color: black;
+}
+ #breadcrumb a:hover{
+    background-color:#5f5f5f ;
+    color: #999999;
+}
+.active{
+    background-color: #555;
+}
+#search_from{
+
+    display: inline-block;
+
+}
+
+form{
+    float: right;
+    margin-top: -40px;
+}
+
+.list{
+    list-style-type: none;
+    overflow: hidden;
+}
+.horizontal li{
+    /*display与float两种方式使列表转为横向*/
+    display: inline;
+}
+.horizontal li a:hover{
+    background-color:#303030 ;
+    color: #999999;
+}
+.horizontal.active{
+    background-color: #555;
+}
+h1
+{
+    background-color: #595757;
+    color: white;
+    text-align: center;
+    
+}
+.wt_t{
+    width:1200px;
+    margin-left:140px
+}
+.zwz{width:220px;float:left}
+.lc_ll{width:958px;float:none;margin-top:2px}
+.lc_ll li{
+    float:left;
+    list-style-type: none;
+    width:116px;
+    height:116px;
+    background:url(images/beijing1.webp) no-repeat center top;
+    border-radius: 50%;
+    margin-right:52px;
+    margin-top: 20px;
+    
+}
+.lc_ll li:hover{background:url(images/beijing1.jpg) no-repeat center top}
+.lc_ll li:last-child{float:right;margin-right:0px}
+.lc_ll li h2 a{	
+	font-size: 36px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color:white;
+    text-align: center;
+}
+.lc_ll li h2{	
+	font-size: 36px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #595757;
+    text-align: center;
+    margin-top:35px;
+}
+
+.lc_ll li span{	
+	font-size: 16px;
+	font-weight: 600;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: white;
+    display:block;
+    margin-top:-15px;
+    text-align: center;
+}
+.lc_ll li:hover h2 a{color:black}
+.lc_ll li:hover span{color:black}
+
+
+ /* 设置网格容器样式 */
+ .grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* 设置单元格之间的间距 */
+}
+
+
+/* 设置单元格样式 */
+.grid-item {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 设置图片样式 */
+.grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+ .grid-item {
+    position: relative; /* 相对定位 */
+    display: inline-block; /* 内联块元素 */
+}
+
+.text {
+    position: absolute;
+    bottom: 0; /* 文字位于图片底部 */
+    left: 0; /* 文字左对齐 */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;              
+}
+.grid-item:hover .text {
+    opacity: 1; /* 鼠标悬停时显示 */
+}
+
+.wt_t2{width:1114px;margin:0 auto;padding-top:10px}
+.dda{
+    width: 50%;
+    float: left;
+}
+.ddc{
+    width: 50%;
+    margin-left: 200px;
+    padding-left: 300px;
+}
+.text-with-background {
+    background-image: url('images/footer2.jpg'); 
+    background-size: cover; /* 可根据需要调整背景图像的大小和位置 */
+    color: #fff; /* 文本颜色 */
+    text-align: center; /* 文本居中对齐 */
+    padding: 20px; /* 文本周围的内边距 */
+    font-size: 24px; /* 文本字体大小 */   
+}
+.text-with-background li  a{ 
+    text-transform: uppercase;  
+    color: white;  
+ }
+ 
+.text-with-background a:hover{
+    background-color:#303030 ;
+    color: #999999;
+}
+.text-with-background.active{
+    background-color: #555;
+}
+
+footer{
+    list-style: none;
+}
+
+footer a{
+    font-size: 70%;
+    color: white;
+    text-transform: uppercase;  
+}
+footer.text-with-background {
+    
+    color: white;
+    font-size: 70%;
+}
+#clock{
+    font-size: 60%;
+    float: right;
+}
